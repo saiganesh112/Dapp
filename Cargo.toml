@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/student_dapp_backend"
+]
+resolver = "2"

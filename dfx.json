@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "student_dapp_backend": {
+      "candid": "src/student_dapp_backend/student_dapp_backend.did",
+      "package": "student_dapp_backend",
+      "type": "rust"
+    },
+    "student_dapp_frontend": {
+      "dependencies": [
+        "student_dapp_backend"
+      ],
+      "source": [
+        "src/student_dapp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "student_dapp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
